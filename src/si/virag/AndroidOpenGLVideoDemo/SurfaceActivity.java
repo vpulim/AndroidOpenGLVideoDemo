@@ -57,7 +57,7 @@ public class SurfaceActivity extends Activity implements TextureView.SurfaceText
 
         try
         {
-            AssetFileDescriptor afd = getAssets().openFd("big_buck_bunny.mp4");
+            AssetFileDescriptor afd = getAssets().openFd("pitch.mp4");
             player.setDataSource(afd.getFileDescriptor(), afd.getStartOffset(), afd.getLength());
             player.setSurface(new Surface(renderer.getVideoTexture()));
             player.setLooping(true);
